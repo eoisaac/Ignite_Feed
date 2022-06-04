@@ -13,6 +13,16 @@
   --border-radius: 8px;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
+
+::selection {
+  color: var(--gray-300);
+  background-color: var(--green-500);
+}
+
 * {
   margin: 0;
   padding: 0;
