@@ -1,0 +1,70 @@
+.post {
+	padding: 2.5rem;
+	border-radius: var(--border-radius);
+	background-color: var(--gray-800);
+}
+
+.post + .post { /* Add style to the next .post after other .post */
+	margin-top: 2rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.avatar {
+	width: calc(3rem + 12px);
+	height: calc(3rem + 12px);
+	border: 4px solid var(--gray-800);
+	outline: 2px solid var(--green-500);
+	border-radius: var(--border-radius);
+}
+
+.authorInfos {
+	display: flex;
+	flex-direction: column;
+}
+
+.authorName {
+	line-height: 1.6;
+	color: var(--gray-100);
+}
+
+.authorTitle {
+	line-height: 1.6;
+	font-size: 0.875rem;
+	color: var(--gray-400);
+}
+
+.time {
+	font-size: 0.875rem;
+	color: var(--gray-400);
+}
+
+.content {
+	line-height: 1.4;
+	color: var(--gray-300);
+	margin-top: 1.5rem;
+}
+
+.content p {
+	margin-top: 1rem;
+}
+
+.content a {
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--green-500);
+}
+
+.content a:hover {
+	color: var(--green-300);
+}
