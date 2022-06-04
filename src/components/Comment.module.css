@@ -1,0 +1,83 @@
+.comment {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: var(--border-radius);
+}
+
+.commentBox {
+	flex: 1;
+}
+
+.commentContent {
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	background-color: var(--gray-700);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.authorName {
+	font-size: 0.875rem;
+}
+
+.time {
+	font-size: 0.75rem;
+	color: var(--gray-400);
+}
+
+.authorName,
+.time {
+	display: block;
+	line-height: 1.6;
+}
+
+.commentMessage {
+	margin-top: 1rem;
+	color: var(--gray-300);
+}
+
+.footer {
+	margin-top: 1rem;
+}
+
+.clapsCount::before {
+	content: '\2022';
+	padding-right: 0.5rem;
+	border-radius: 50%;
+}
+
+.clapBtn {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.deleteBtn,
+.clapBtn {
+	line-height: 0;
+	cursor: pointer;
+	color: var(--gray-400);
+	transition: color, 0.1s;
+	border: 0;
+	border-radius: 2px;
+	background-color: transparent;
+}
+
+.deleteBtn:hover {
+	color: var(--red-500);
+}
+
+.clapBtn:hover {
+	color: var(--green-300);
+}
+
