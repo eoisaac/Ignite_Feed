@@ -14,10 +14,10 @@ export const Sidebar = (props) => {
 			<div className={styles.profile}>
 				<Avatar src="https://github.com/eoisaac.png" />
 
-				<strong className={styles.username}> 
+				<strong className={styles.userName}> 
 					Isaac Santiago
 				</strong>
-				<span className={styles.usertitle}> 
+				<span className={styles.userRole}> 
 					Web developer 
 				</span>
 			</div>

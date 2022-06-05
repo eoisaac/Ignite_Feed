@@ -18,13 +18,13 @@
 	margin-top: calc(0px - 1.5rem - 6px);
 }
 
-.username {
+.userName {
 	margin-top: 1rem;
 	line-height: 1.6;
 	color: var(--gray-100);
 }
 
-.usertitle {
+.userRole {
 	font-size: 0.875rem;
 	line-height: 1.6;
 	color: var(--gray-400);

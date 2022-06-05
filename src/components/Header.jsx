@@ -6,6 +6,7 @@ export const Header = () => {
 		<header className={styles.header}>
 			<h1 className={styles.title}>
 				<img src={igniteLogo} alt="Ignite logo"/>
+				Ignite Feed
 			</h1>
 		</header>
 	);
