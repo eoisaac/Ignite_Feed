@@ -1,12 +1,20 @@
 import styles from './Comment.module.css';
 
-import { ThumbsUp, Trash } from 'phosphor-react';
+import { HandsClapping, Trash } from 'phosphor-react';
 import { Avatar } from './Avatar';
+import { useState } from 'react';
 
 export const Comment = ({ content, onDeleteComment}) => {
 
-	const handleDeleteComment = () => {
+	const [ clapCount, setClapCount ] = useState(0);
 
+	const handleClapComment = () => {
+		setClapCount((state) => {
+			return state + 1
+		});
+	};
+
+	const handleDeleteComment = () => {
 		onDeleteComment(content);
 	};
 
@@ -38,10 +46,10 @@ export const Comment = ({ content, onDeleteComment}) => {
 				</div>
 
 				<footer className={styles.footer}>
-					<button className={styles.clapBtn}>
-						<ThumbsUp size={24} />
+					<button className={styles.clapBtn} onClick={handleClapComment}>
+						<HandsClapping size={24} />
 						Aplaudir 
-						<span className={styles.clapsCount}>20</span>
+						<span className={styles.clapsCount}>{clapCount}</span>
 					</button>
 				</footer>
 			</div>
