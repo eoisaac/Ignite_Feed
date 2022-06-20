@@ -1,16 +1,16 @@
 .header {
-	display: flex;
-	justify-content: center;
-	padding: 1.25rem 0;
-	background-color: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0;
+  background-color: var(--gray-800);
 }
 
 .title {
-	display: inline-flex;
-	align-items: center;
-	gap: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .title img {
-	height: 2rem;
+  height: 2rem;
 }
